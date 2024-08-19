@@ -8,6 +8,10 @@
 .navbar {
   background-color: #333;
   overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Make the navbar stretch across the top */
 }
 
 .navbar a {
@@ -25,7 +29,8 @@
 }
 
 .navbar a.active {
-  background-color: #04AA6D;
+
+  background-color: #0c7ea8;
   color: white;
 }
 
