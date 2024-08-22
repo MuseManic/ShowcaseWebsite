@@ -58,13 +58,15 @@ h1 {
 
 }
 .container {
-
-height: 500 vh;
-width: 100%;
-background: linear-gradient(45deg, #0c7ea8, #0a5174);
-
-
-
+  width: 300px; /* Set the desired width */
+  height: 200px; /* Set the desired height */
+  border-radius: 40px; /* Adjust this value for rounder or less rounded edges */
+  background: linear-gradient(30deg, #0c7ea8, #0a5174);
+  display: flex; /* Optional: Center content inside */
+  align-items: center; /* Optional: Center content vertically */
+  justify-content: center; /* Optional: Center content horizontally */
+  color: white; /* Optional: Text color for content inside */
+  text-align: center; /* Optional: Text alignment */
 }
 
 .bcontainer {
