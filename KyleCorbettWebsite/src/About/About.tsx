@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react'
 
 
-function About() {
+function App() {
 
   
 return (
@@ -25,4 +25,4 @@ return (
 
 
 
-export default About
+export default App
