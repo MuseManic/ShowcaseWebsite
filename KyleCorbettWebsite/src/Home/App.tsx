@@ -1,7 +1,10 @@
 import './App.css'
 import { useState, useEffect } from 'react'
 import About from '../About/About'
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Contact from '../Contact/Contact'
+import Projects from '../Projects/Projects'
+
+import { Route, Routes } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 
@@ -58,9 +61,14 @@ return (
       <div className='bcontainer'>
         <Navbar />
         <Routes>
+        <Route path="/" element={<HomeWithHeading />} />
           <Route path="/about" element={<About/>} />
+          <Route path="/project" element={<Projects/>} />
+          <Route path="/contact" element={<Contact/>} />
         </Routes>
-        <DelayedHeading />
+
+  
+      
       </div>
   
   
@@ -76,6 +84,18 @@ return (
 
 }
 
+function HomeWithHeading() {
+  return (
+    <>
+
+      <DelayedHeading />
+    </>
+  );
+}
+
+
+
+
 
 function Navbar() {
   const navbar = {
@@ -85,15 +105,21 @@ function Navbar() {
     Item4: "Contact",
   };
 
+  
+
   return (
     <div className="navbar">
-      <Link to="/home" className="active">{navbar.Item1}</Link>
+      <Link to="/" className="active">{navbar.Item1}</Link>
       <Link to="/about">{navbar.Item2}</Link>
-      <a href="#project">{navbar.Item3}</a>
-      <a href="#contact">{navbar.Item4}</a>
+      <Link to="/project">{navbar.Item3}</Link>
+      <Link to="/contact">{navbar.Item4}</Link>
       <div className="navbar-right">
         <a href="#login">Login</a>
       </div>
+
+     
+
+
     </div>
   );
 }

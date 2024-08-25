@@ -2,13 +2,13 @@
 
 
 
-function App2() {
+function App() {
 
   
     return (
       <>
       
-      <h1>test2</h1>
+      <h1>test3</h1>
       
       </>
       
@@ -25,4 +25,4 @@ function App2() {
     
     
     
-    export default App2
+    export default App
